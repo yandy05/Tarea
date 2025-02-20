@@ -1,0 +1,12 @@
+@startuml
+class Temperatura {
+    - grados_celsius: float
+    + Temperatura(grados_celsius: float)
+    + get_grados_fahrenheit(): float
+}
+
+note right of Temperatura::get_grados_fahrenheit()
+    F = (C * 9/5) + 32
+end note
+
+@enduml
